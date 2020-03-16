@@ -1,0 +1,321 @@
+{
+    "@type": {
+      "type": "String"
+    },
+    "@created": {
+      "type": "Date"
+    },
+    "@updated": {
+      "type": "Date"
+    },
+    "drugbank-id": {
+      "type": [
+        "Mixed"
+      ]
+    },
+    "name": {
+      "type": "String"
+    },
+    "description": {
+      "type": "String"
+    },
+    "cas-number": {
+      "type": "String"
+    },
+    "unii": {
+      "type": "String"
+    },
+    "average-mass": {
+      "$numberDouble": {
+        "type": "String"
+      }
+    },
+    "monoisotopic-mass": {
+      "$numberDouble": {
+        "type": "String"
+      }
+    },
+    "state": {
+      "type": "String"
+    },
+    "groups": {
+      "group": {
+        "type": [
+          "String"
+        ]
+      }
+    },
+    "general-references": {
+      "articles": {
+        "article": {
+          "type": [
+            "Mixed"
+          ]
+        }
+      },
+      "textbooks": {
+        "type": "Mixed"
+      },
+      "links": {
+        "link": {
+          "type": [
+            "Mixed"
+          ]
+        }
+      },
+      "attachments": {
+        "attachment": {
+          "type": [
+            "Mixed"
+          ]
+        }
+      }
+    },
+    "synthesis-reference": {
+      "type": "String"
+    },
+    "indication": {
+      "type": "String"
+    },
+    "pharmacodynamics": {
+      "type": "String"
+    },
+    "mechanism-of-action": {
+      "type": "String"
+    },
+    "toxicity": {
+      "type": "String"
+    },
+    "metabolism": {
+      "type": "String"
+    },
+    "absorption": {
+      "type": "String"
+    },
+    "half-life": {
+      "type": "String"
+    },
+    "protein-binding": {
+      "type": "String"
+    },
+    "route-of-elimination": {
+      "type": "String"
+    },
+    "volume-of-distribution": {
+      "type": "String"
+    },
+    "clearance": {
+      "type": "String"
+    },
+    "classification": {
+      "description": {
+        "type": "String"
+      },
+      "direct-parent": {
+        "type": "String"
+      },
+      "kingdom": {
+        "type": "String"
+      },
+      "superclass": {
+        "type": "String"
+      },
+      "class": {
+        "type": "String"
+      },
+      "subclass": {
+        "type": "String"
+      },
+      "alternative-parent": {
+        "type": [
+          "String"
+        ]
+      },
+      "substituent": {
+        "type": [
+          "String"
+        ]
+      }
+    },
+    "salts": {
+      "salt": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "synonyms": {
+      "synonym": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "products": {
+      "product": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "international-brands": {
+      "international-brand": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "mixtures": {
+      "mixture": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "packagers": {
+      "packager": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "manufacturers": {
+      "manufacturer": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "prices": {
+      "price": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "categories": {
+      "category": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "affected-organisms": {
+      "affected-organism": {
+        "type": [
+          "String"
+        ]
+      }
+    },
+    "dosages": {
+      "dosage": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "atc-codes": {
+      "atc-code": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "ahfs-codes": {
+      "ahfs-code": {
+        "type": [
+          "String"
+        ]
+      }
+    },
+    "pdb-entries": {
+      "pdb-entry": {
+        "type": [
+          "String"
+        ]
+      }
+    },
+    "fda-label": {
+      "type": "String"
+    },
+    "msds": {
+      "type": "String"
+    },
+    "patents": {
+      "patent": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "food-interactions": {
+      "type": "Mixed"
+    },
+    "drug-interactions": {
+      "drug-interaction": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "calculated-properties": {
+      "property": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "experimental-properties": {
+      "property": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "external-identifiers": {
+      "external-identifier": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "external-links": {
+      "external-link": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "pathways": {
+      "pathway": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "reactions": {
+      "type": "Mixed"
+    },
+    "snp-effects": {
+      "type": "Mixed"
+    },
+    "snp-adverse-drug-reactions": {
+      "type": "Mixed"
+    },
+    "targets": {
+      "target": {
+        "type": [
+          "Mixed"
+        ]
+      }
+    },
+    "enzymes": {
+      "type": "Mixed"
+    },
+    "carriers": {
+      "type": "Mixed"
+    },
+    "transporters": {
+      "type": "Mixed"
+    }
+  }
