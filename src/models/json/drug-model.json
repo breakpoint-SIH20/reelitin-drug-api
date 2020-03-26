@@ -1,14 +1,14 @@
 {
-    "@type": {
+    "_type": {
       "type": "String"
     },
-    "@created": {
+    "_created": {
       "type": "Date"
     },
-    "@updated": {
+    "_updated": {
       "type": "Date"
     },
-    "drugbank-id": {
+    "drugbank_id": {
       "type": [
         "Mixed"
       ]
@@ -19,18 +19,18 @@
     "description": {
       "type": "String"
     },
-    "cas-number": {
+    "cas_number": {
       "type": "String"
     },
     "unii": {
       "type": "String"
     },
-    "average-mass": {
+    "average_mass": {
       "$numberDouble": {
         "type": "String"
       }
     },
-    "monoisotopic-mass": {
+    "monoisotopic_mass": {
       "$numberDouble": {
         "type": "String"
       }
@@ -45,7 +45,7 @@
         ]
       }
     },
-    "general-references": {
+    "general_references": {
       "articles": {
         "article": {
           "type": [
@@ -71,7 +71,7 @@
         }
       }
     },
-    "synthesis-reference": {
+    "synthesis_reference": {
       "type": "String"
     },
     "indication": {
@@ -80,7 +80,7 @@
     "pharmacodynamics": {
       "type": "String"
     },
-    "mechanism-of-action": {
+    "mechanism_of_action": {
       "type": "String"
     },
     "toxicity": {
@@ -92,16 +92,16 @@
     "absorption": {
       "type": "String"
     },
-    "half-life": {
+    "half_life": {
       "type": "String"
     },
-    "protein-binding": {
+    "protein_binding": {
       "type": "String"
     },
-    "route-of-elimination": {
+    "route_of_elimination": {
       "type": "String"
     },
-    "volume-of-distribution": {
+    "volume_of_distribution": {
       "type": "String"
     },
     "clearance": {
@@ -111,7 +111,7 @@
       "description": {
         "type": "String"
       },
-      "direct-parent": {
+      "direct_parent": {
         "type": "String"
       },
       "kingdom": {
@@ -126,7 +126,7 @@
       "subclass": {
         "type": "String"
       },
-      "alternative-parent": {
+      "alternative_parent": {
         "type": [
           "String"
         ]
@@ -158,8 +158,8 @@
         ]
       }
     },
-    "international-brands": {
-      "international-brand": {
+    "international_brands": {
+      "international_brand": {
         "type": [
           "Mixed"
         ]
@@ -200,8 +200,8 @@
         ]
       }
     },
-    "affected-organisms": {
-      "affected-organism": {
+    "affected_organisms": {
+      "affected_organism": {
         "type": [
           "String"
         ]
@@ -214,28 +214,28 @@
         ]
       }
     },
-    "atc-codes": {
-      "atc-code": {
+    "atc_codes": {
+      "atc_code": {
         "type": [
           "Mixed"
         ]
       }
     },
-    "ahfs-codes": {
-      "ahfs-code": {
+    "ahfs_codes": {
+      "ahfs_code": {
         "type": [
           "String"
         ]
       }
     },
-    "pdb-entries": {
-      "pdb-entry": {
+    "pdb_entries": {
+      "pdb_entry": {
         "type": [
           "String"
         ]
       }
     },
-    "fda-label": {
+    "fda_label": {
       "type": "String"
     },
     "msds": {
@@ -248,39 +248,39 @@
         ]
       }
     },
-    "food-interactions": {
+    "food_interactions": {
       "type": "Mixed"
     },
-    "drug-interactions": {
-      "drug-interaction": {
+    "drug_interactions": {
+      "drug_interaction": {
         "type": [
           "Mixed"
         ]
       }
     },
-    "calculated-properties": {
+    "calculated_properties": {
       "property": {
         "type": [
           "Mixed"
         ]
       }
     },
-    "experimental-properties": {
+    "experimental_properties": {
       "property": {
         "type": [
           "Mixed"
         ]
       }
     },
-    "external-identifiers": {
-      "external-identifier": {
+    "external_identifiers": {
+      "external_identifier": {
         "type": [
           "Mixed"
         ]
       }
     },
-    "external-links": {
-      "external-link": {
+    "external_links": {
+      "external_link": {
         "type": [
           "Mixed"
         ]
@@ -296,10 +296,10 @@
     "reactions": {
       "type": "Mixed"
     },
-    "snp-effects": {
+    "snp_effects": {
       "type": "Mixed"
     },
-    "snp-adverse-drug-reactions": {
+    "snp_adverse_drug_reactions": {
       "type": "Mixed"
     },
     "targets": {
