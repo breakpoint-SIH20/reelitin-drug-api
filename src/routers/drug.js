@@ -21,7 +21,7 @@ router.get('/drug/find', async (req, res) => {
     try {
         Drug.findOne({ $or : [
             { 'synonyms.synonym._do' : { $regex : new RegExp(name, "i") } },
-            { 'products.product.dname' : { $regex : new RegExp(name, "i") } }
+            { 'products.product.dname' : { $regex : new RegExp(name, "i") } },
             { 'international_brands.international_brand.dname' : { $regex : new RegExp(name, "i") } }
         ]}, (err, doc) => {
             if (err || doc == null) return res.sendStatus(404)
