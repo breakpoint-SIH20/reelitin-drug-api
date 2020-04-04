@@ -35,11 +35,11 @@ router.get('/drug/find', async (req, res) => {
 
 router.get('/drug/list', async (req, res) => {
     try {
-        Drug.find({}, {'name': 1, '_id': 0}).sort({'name': 1}, (err, doc) => {
+        Drug.find({}, {'name': 1, '_id': 0}, (err, doc) => {
             if (err || doc == null) return res.sendStatus(404)
             console.log(doc)
             res.send(doc)
-        });
+        }).sort({'name': 1});
     } catch (e) {
         res.status(500).send()
     }
