@@ -33,6 +33,19 @@ router.get('/drug/find', async (req, res) => {
     }
 })
 
+router.get('/drug/search', async (req, res) => {
+    const term = req.query.term
+    try {
+    Drug.find({ name: /.*term*/ }, (err, doc) => {
+            if (err || doc == null) return res.sendStatus(404)
+            console.log(doc)
+            res.send(doc)
+        });
+    } catch (e) {
+        res.status(500).send()
+    }
+})
+
 router.get('/drug/list', async (req, res) => {
     try {
         Drug.find({}, {'name': 1, '_id': 1}, (err, doc) => {
