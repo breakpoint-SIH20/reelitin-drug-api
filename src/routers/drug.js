@@ -19,7 +19,7 @@ router.get('/drug/get/:name', async (req, res) => {
 router.get('/drug/find', async (req, res) => {
     const name = req.query.name
     try {
-        Drug.find({ $or : [
+        Drug.findOne({ $or : [
             { 'synonyms.synonym._do' : { $regex : new RegExp(name, "i") } },
             { 'products.product.dname' : { $regex : new RegExp(name, "i") } },
             { 'international_brands.international_brand.dname' : { $regex : new RegExp(name, "i") } }
