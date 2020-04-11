@@ -36,7 +36,7 @@ router.get('/drug/find', async (req, res) => {
 router.get('/drug/search', async (req, res) => {
     const term = req.query.term
     try {
-    Drug.find({ name: /.*term*/ }, (err, doc) => {
+    Drug.find({ name: { $regex : new RegExp(term, "i") } }, (err, doc) => {
             if (err || doc == null) return res.sendStatus(404)
             console.log(doc)
             res.send(doc)
