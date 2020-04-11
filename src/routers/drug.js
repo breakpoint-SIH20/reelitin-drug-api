@@ -19,7 +19,7 @@ router.get('/drug/get/:name', async (req, res) => {
 router.get('/drug/find', async (req, res) => {
     const name = req.query.name
     try {
-        Drug.findOne({ $or : [
+        Drug.find({ $or : [
             { 'synonyms.synonym._do' : { $regex : new RegExp(name, "i") } },
             { 'products.product.dname' : { $regex : new RegExp(name, "i") } },
             { 'international_brands.international_brand.dname' : { $regex : new RegExp(name, "i") } }
@@ -37,10 +37,10 @@ router.get('/drug/search', async (req, res) => {
     const term = req.query.term
     try {
     Drug.find({ name: { $regex : new RegExp(term, "i") } }, (err, doc) => {
-            if (err || doc == null) return res.sendStatus(404)
-            console.log(doc)
-            res.send(doc)
-        });
+        if (err || doc == null) return res.sendStatus(404)
+        console.log(doc)
+        res.send(doc)
+    });
     } catch (e) {
         res.status(500).send()
     }
