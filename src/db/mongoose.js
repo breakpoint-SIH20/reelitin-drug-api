@@ -1,10 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const connectionString = 'mongodb+srv://zulu:1234@cluster0-5jxp1.mongodb.net/reelitin?retryWrites=true&w=majority'
+const connectionString = "mongodb+srv://zulu:zulu@reelitin.5jxp1.mongodb.net/reelitin";
 
 mongoose.connect(connectionString, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
-    useUnifiedTopology: true
-})
+    useUnifiedTopology: true,
+});
