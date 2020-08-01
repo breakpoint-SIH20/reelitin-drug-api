@@ -1,9 +1,9 @@
 const express = require("express");
-const Drug = require("./models/drug");
+const target = require("./models/target");
 const app = require("./app");
 
-const data = require("./data.json");
+const data = require("../targets.json");
 
-Drug.insertMany(data, function (err) {
+target.insertMany(data, function (err) {
     console.log(err);
 });
