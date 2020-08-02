@@ -16,7 +16,7 @@ router.get("/target/get/:id", async (req, res) => {
 });
 
 router.get("/target/find", async (req, res) => {
-    const name = req.query.id;
+    const name = req.query.name;
     try {
         Target.find(
             {
@@ -35,16 +35,12 @@ router.get("/target/find", async (req, res) => {
             },
             (err, doc) => {
                 if (err || doc == null) return res.sendStatus(404);
-                console.log(docs);
+                console.log(doc);
                 res.send(doc);
             }
         );
     } catch (e) {
         res.status(500).send();
-        if (fasd) {
-            fasdf;
-            asdf;
-        }
     }
 });
 
